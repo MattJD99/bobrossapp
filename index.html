@@ -1,51 +1,60 @@
 <!DOCTYPE = html>
 <html lang= "en">
     <head>
-        <title>Bob Ross Collector</title>
-        <link rel= "stylesheet" href= ".index/css" />
+        <title>Art Collector</title>
+        <link rel= "stylesheet" href="index.css" />
     </head>
-        <body>
-            <h1>My Bob Ross Collection</h1>
+    <header class="header">
+        <h1>Let's Build Your Bob Ross Collection</h1>
+    </header>
+        <body class="body">
+            
+            <!--will be changed to current users name bob ross collection using alert window-->
             <hr>
-            <!--button that says "lets find your first painting name from alert window-->
-            <!--button to select random painting goes here-->
+            <h2>Paintings for your Consideration</h2>
+            <button type="button" id="add-paintings" class="add-more-paintings">Load more Paintings to Sort Through!</button>
             <br>
             <div id="collection">
-                <ul id="paintings">
+                <!--all the paintings will be loaded as a collection of thumbnails, either can be resized or made to flip through?
+                add thumbs up or down with pictures and then add picture to liked or disliked painting collection-->
+            </div>
+            <hr>
+            <br>
+            <div id="liked">
+                <h2 id="gallery"></h2>
+                <div id="liked-paintings">
                     <!--list of "liked or thumbs up paintings added here
-                    format so collection is prominent in center of page-->
-
-
-                </ul>
-                <form id="comments">
-                    <!--comments form will be appended to picture when it's added to collection, added thoughts or similar to form
-                    as placeholder when no text has been entered-->
-                </form>
+                    format so collection is prominent in center of page, maybe add picture frame around the paintings
+                    could add youtube link and/or paint needed to recreate-->
+                </div>
             </div>
             <hr>
             <br>
             <div id="discard">
-                <ul id="paintings">
+                <h2 id="take to auction"></h2>
+                <div id="discarded-paintings">
                     <!--discarded paintings will be added here
                     formated so they are much smaller then the liked pictures collection-->
-                </ul>
-                <form id="comments">
-                    <!--comments form will be appended to picture when it's added to collection, added thoughts or similar to form
-                    as placeholder when no text has been entered-->
-                </form>
             </div>
-            <footer class="site info">
+            <hr>
+            <footer class="footer">
                 <!--add information about created date, personal information, etc-->
+                    <p>Created by M.D.&nbsp;&nbsp;2021&nbsp;&nbsp;<a href="mailto:dayclawtel@gmail.com">Contact Me</a></p>
             </footer>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
 
-            <script src="src.index.js"></script>
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+  
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="modal-image">
+  
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+                </div>
 
-
-
-
-
-
-
+            <script src="index.js"></script>
 
         </body>
 </html>
