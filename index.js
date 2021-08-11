@@ -61,8 +61,8 @@ function sortPaintings(event) {
     if (event.target.id.includes('Liked')) {
         likedCollection.append(div)
     } else if (event.target.id.includes('Discarded')) {
-            discardedCollection.append(div)
-        }
+        discardedCollection.append(div)
+    }
 }
 
 function clickOnPictures() {
